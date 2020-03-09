@@ -1,26 +1,30 @@
 <?php
 $cidFields = $block->getOrderCidFields();
 ?>
-<?php if($cidFields): ?>
+<?php if ($cidFields): ?>
     <section class="admin__page-section">
         <div class="admin__page-section-title">
-            <span class="title"><?php /* @escapeNotVerified */ echo __('Identification Document') ?></span>
+            <span class="title"><?php /* @escapeNotVerified */echo __('Identification Document'); ?></span>
         </div>
         <div class="admin__page-section-content">
             <div class="order-information">
-                <div class="box">
-                    <strong class="box-title"><span><?php /* @escapeNotVerified */ echo __('Shipping') ?></span></strong>
-                    <div class="box-content">
-                        <?php echo $this->escapeHtml($cidFields->getShippingCidType()); ?>: <?php echo $this->escapeHtml($cidFields->getShippingCidNumber()); ?>
+                <?php if ($cidFields->getShippingCidType() || $cidFields->getShippingCidNumber()): ?>
+                    <div class="box">
+                        <strong class="box-title"><span><?php /* @escapeNotVerified */echo __('Shipping'); ?></span></strong>
+                        <div class="box-content">
+                            <?php echo $this->escapeHtml($cidFields->getShippingCidType()); ?>: <?php echo $this->escapeHtml($cidFields->getShippingCidNumber()); ?>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <strong class="box-title"><span><?php /* @escapeNotVerified */ echo __('Billing') ?></span></strong>
-                    <div class="box-content">
-                        <?php echo $this->escapeHtml($cidFields->getBillingCidType()); ?>: <?php echo $this->escapeHtml($cidFields->getBillingCidNumber()); ?>
+                <?php endif;?>
+                <?php if ($cidFields->getBillingCidType() || $cidFields->getBillingCidNumber()): ?>
+                    <div class="box">
+                        <strong class="box-title"><span><?php /* @escapeNotVerified */echo __('Billing'); ?></span></strong>
+                        <div class="box-content">
+                            <?php echo $this->escapeHtml($cidFields->getBillingCidType()); ?>: <?php echo $this->escapeHtml($cidFields->getBillingCidNumber()); ?>
+                        </div>
                     </div>
-                </div>
+                <?php endif;?>
             </div>
         </div>
     </section>
-<?php endif; ?>
+<?php endif;?>
