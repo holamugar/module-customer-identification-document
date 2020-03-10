@@ -2,9 +2,9 @@ define(
     [
         'ko',
     ],
-    function(ko) {
+    function (ko) {
         'use strict';
-        return{
+        return {
             cidFieldsData: ko.observable(null)
         }
     }
