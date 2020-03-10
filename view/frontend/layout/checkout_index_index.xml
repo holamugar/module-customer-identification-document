@@ -42,25 +42,26 @@
                                                                                     </item>
                                                                                     <item name="options" xsi:type="array">
                                                                                         <item name="0" xsi:type="array">
-                                                                                            <item name="label" xsi:type="string">Please select value</item>
+                                                                                            <item name="label" xsi:type="string" translate="true">Please select value</item>
                                                                                             <item name="value" xsi:type="string"></item>
                                                                                         </item>
                                                                                         <item name="1" xsi:type="array">
-                                                                                            <item name="label" xsi:type="string">DNI</item>
+                                                                                            <item name="label" xsi:type="string" translate="true">DNI</item>
                                                                                             <item name="value" xsi:type="string">DNI</item>
                                                                                         </item>
                                                                                         <item name="2" xsi:type="array">
-                                                                                            <item name="label" xsi:type="string">CI</item>
+                                                                                            <item name="label" xsi:type="string" translate="true">CI</item>
                                                                                             <item name="value" xsi:type="string">CI</item>
                                                                                         </item>
                                                                                         <item name="3" xsi:type="array">
-                                                                                            <item name="label" xsi:type="string">Passport</item>
+                                                                                            <item name="label" xsi:type="string" translate="true">Passport</item>
                                                                                             <item name="value" xsi:type="string">Passport</item>
                                                                                         </item>
                                                                                     </item>
                                                                                     <item name="provider" xsi:type="string">checkoutProvider</item>
                                                                                     <item name="dataScope" xsi:type="string">cidShippingForm.shipping_cid_type</item>
-                                                                                    <item name="label" xsi:type="string">Type</item>
+                                                                                    <item name="label" xsi:type="string" translate="true">Type</item>
+                                                                                    <item name="placeholder" xsi:type="string" translate="true">Type</item>
                                                                                     <item name="sortOrder" xsi:type="string">1</item>
                                                                                     <item name="additionalClasses" xsi:type="array">
                                                                                         <item name="half-row" xsi:type="boolean">true</item>
@@ -83,7 +84,8 @@
                                                                                     </item>
                                                                                     <item name="provider" xsi:type="string">checkoutProvider</item>
                                                                                     <item name="dataScope" xsi:type="string">cidShippingForm.shipping_cid_number</item>
-                                                                                    <item name="label" xsi:type="string">Number</item>
+                                                                                    <item name="label" xsi:type="string" translate="true">Number</item>
+                                                                                    <item name="placeholder" xsi:type="string" translate="true">Number</item>
                                                                                     <item name="sortOrder" xsi:type="string">2</item>
                                                                                     <item name="additionalClasses" xsi:type="array">
                                                                                         <item name="half-row" xsi:type="boolean">true</item>
@@ -121,7 +123,6 @@
                                                                         <item name="cid-billing-form-fieldset" xsi:type="array">
                                                                             <item name="component" xsi:type="string">uiComponent</item>
                                                                             <item name="displayArea" xsi:type="string">cid-billing-form-fields</item>
-
                                                                             <item name="children" xsi:type="array">
                                                                                 <item name="billing_cid_type" xsi:type="array">
                                                                                     <item name="component" xsi:type="string">Magento_Ui/js/form/element/select</item>
@@ -134,25 +135,26 @@
                                                                                     </item>
                                                                                     <item name="options" xsi:type="array">
                                                                                         <item name="0" xsi:type="array">
-                                                                                            <item name="label" xsi:type="string">Please select value</item>
+                                                                                            <item name="label" xsi:type="string" translate="true">Please select value</item>
                                                                                             <item name="value" xsi:type="string"></item>
                                                                                         </item>
                                                                                         <item name="1" xsi:type="array">
-                                                                                            <item name="label" xsi:type="string">DNI</item>
+                                                                                            <item name="label" xsi:type="string" translate="true">DNI</item>
                                                                                             <item name="value" xsi:type="string">DNI</item>
                                                                                         </item>
                                                                                         <item name="2" xsi:type="array">
-                                                                                            <item name="label" xsi:type="string">CI</item>
+                                                                                            <item name="label" xsi:type="string" translate="true">CI</item>
                                                                                             <item name="value" xsi:type="string">CI</item>
                                                                                         </item>
                                                                                         <item name="3" xsi:type="array">
-                                                                                            <item name="label" xsi:type="string">Passport</item>
+                                                                                            <item name="label" xsi:type="string" translate="true">Passport</item>
                                                                                             <item name="value" xsi:type="string">Passport</item>
                                                                                         </item>
                                                                                     </item>
                                                                                     <item name="provider" xsi:type="string">checkoutProvider</item>
                                                                                     <item name="dataScope" xsi:type="string">cidBillingForm.billing_cid_type</item>
-                                                                                    <item name="label" xsi:type="string">Type</item>
+                                                                                    <item name="label" xsi:type="string" translate="true">Type</item>
+                                                                                    <item name="placeholder" xsi:type="string" translate="true">Type</item>
                                                                                     <item name="sortOrder" xsi:type="string">1</item>
                                                                                     <item name="additionalClasses" xsi:type="array">
                                                                                         <item name="half-row" xsi:type="boolean">true</item>
@@ -175,7 +177,8 @@
                                                                                     </item>
                                                                                     <item name="provider" xsi:type="string">checkoutProvider</item>
                                                                                     <item name="dataScope" xsi:type="string">cidBillingForm.billing_cid_number</item>
-                                                                                    <item name="label" xsi:type="string">Number</item>
+                                                                                    <item name="label" xsi:type="string" translate="true">Number</item>
+                                                                                    <item name="placeholder" xsi:type="string" translate="true">Number</item>
                                                                                     <item name="sortOrder" xsi:type="string">2</item>
                                                                                     <item name="additionalClasses" xsi:type="array">
                                                                                         <item name="half-row" xsi:type="boolean">true</item>

@@ -5,7 +5,7 @@ var config = {
                 'Mugar_CustomerIdentificationDocument/js/view/shipping-mixin': true,
                 'Mugar_CustomerIdentificationDocument/js/view/shipping-template-mixin': true,
             },
-            'IWD_Opc/js/model/view/shipping': {
+            'IWD_Opc/js/view/shipping': {
                 'Mugar_CustomerIdentificationDocument/js/view/shipping-mixin': true
             },
             'Magento_Checkout/js/view/payment': {

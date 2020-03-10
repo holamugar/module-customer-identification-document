@@ -17,16 +17,13 @@ define([
 
             validateShippingInformation: function () {
                 var originalResult = this._super();
-                if (originalResult == false) {
-                    return false;
-                }
 
                 /* validate cid fields */
                 if (this.validateCidShippingForm()) {
                     return false;
                 }
 
-                return true;
+                return originalResult;
             },
         });
     };
