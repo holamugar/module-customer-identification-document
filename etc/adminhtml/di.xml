@@ -10,7 +10,8 @@
  *
  */
 -->
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Mugar\CustomerIdentificationDocument\Controller\Adminhtml\Types\Index">
         <arguments>
             <argument name="activeMenuItem" xsi:type="string">Mugar_CustomerIdentificationDocument::types</argument>
@@ -43,5 +44,13 @@
                 <item name="CID Types" xsi:type="string">cid/types/index</item>
             </argument>
         </arguments>
+    </type>
+    <type name="Magento\Sales\Block\Adminhtml\Order\Create\Form\Account">
+        <plugin name="Mugar\CustomerIdentificationDocument\Plugin\Sales\Block\Adminhtml\Order\Create\Form\Account\AddCidFieldsPlugin"
+                type="Mugar\CustomerIdentificationDocument\Plugin\Sales\Block\Adminhtml\Order\Create\Form\Account\AddCidFieldsPlugin" />
+    </type>
+    <type name="Magento\Sales\Model\AdminOrder\Create">
+        <plugin name="Mugar\CustomerIdentificationDocument\Plugin\Sales\Model\AdminOrder\Create\AddCidFieldsPlugin"
+                type="Mugar\CustomerIdentificationDocument\Plugin\Sales\Model\AdminOrder\Create\AddCidFieldsPlugin" />
     </type>
 </config>
